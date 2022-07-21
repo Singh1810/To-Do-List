@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="mainheader"></div>
+
+  <div id="main">
+    <div id="tasktext"></div>
+  </div>
+
+    <form class="firstform">
+        <div class="formcontainer">
+            <ul>
+                <li>
+                    <label for="project">Project Name</label>
+                    <input type="text" placeholder="Name of project" name="project" id="project" required>
+                </li>
+
+                <li>
+                    <label for="project2">Project Description</label>
+                    <input type="text" placeholder="Description of project" name="project2" id="project2" >
+                </li>
+
+                <li>
+                    <div class="butcont">                   
+                        <button type="button" class="addproj" id="addproj">Add Project</buton>                   
+                        <button type="button" class="cancel" id="cancel">Cancel</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+
+    <form class="taskpopup" id="taskpopup">
+        <div>
+            <ul>
+                <li>
+                    <label for="tasktitle">Title</label>
+                    <input type="text" placeholder="Task title" name="tasktitle" id="tasktitle">
+                </li>
+                
+                <li>
+                    <div class="taskformbuttcont">
+                        <button type="button" class="addproj" id="addtask">Add task</button>
+                        <button type="button" class="cancel" id="canceltask">Cancel</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+
+    <div class="sidebartop">
+        
+        <div class="projectstitle">To Do List :</div>
+        <div class="projectborderright"></div>
+   
+    </div>
+    
+    <div class="sidebar">
+        <div class="activeprojects" id="activeprojects"></div>
+        <div class="addproject" id="addproject">+ Add Project</div>
+    </div>
+
+    <div class="header">
+        <div id="name">My Project...</div>
+        <div id="description">Description...</div>   
+    </div>
+    
+<script src="./index.js"></script>
+</body>
+</html>
